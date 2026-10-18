@@ -722,6 +722,12 @@ sudo apt update
 
 > 搭建过程整体顺利。虚拟机使用教师下发的 Kali 2026.2 预装镜像（kali-linux-2026.2-vmware-amd64），解压后在 VMware 中打开并选择 I Copied It，按课程推荐档为虚拟机分配 4 核 CPU、4096MB 内存，网络保持 NAT。open-vm-tools 预装正常，Windows 与虚拟机之间的复制粘贴和自适应分辨率均可使用；软件源保持官方源，`sudo apt update` 正常完成；安装并启用 openssh-server 后，MobaXterm 和 VSCode Remote-SSH 均能从 Windows 宿主机远程登录。遇到的一个小问题是虚拟机重启后 SSH 服务需要确认处于监听状态，执行 `sudo systemctl enable --now ssh` 并检查 22 端口后解决。当前环境可以继续完成后续实验。
 
+
+
+
+
+
+
 ---
 
 ## 截图要求
@@ -742,9 +748,14 @@ sudo apt update
 
 ---
 
+
 ## 提交要求
 
+
+
 在自己的“学号姓名”文件夹下新建 `Lab3/`，提交填写完整的 `Lab3.md` 和全部 4 张截图：
+
+
 
 ```text
 学号姓名/
@@ -757,14 +768,23 @@ sudo apt update
         └── lab3_vscode_remote.png
 ```
 
+
+
 > **注意**：`imgs` 全部小写；文件夹名和截图文件名区分大小写，必须与上面完全一致，否则图片引用会失效。
 > 文件名里的分隔符是**下划线 `_`**，不是减号 `-`：要写 `lab3_network.png`，不要写成 `lab3-network.png`。
 >
 > **只提交上面列出的文件。** 本作业只有 `Lab3.md` 和 4 张截图，不需要提交任何其他文件。提交前用 `git status` 确认变更文件只有上面这 5 个。
 
+
+
 ---
 
+
+
 ## 截止时间
+
+
+
 
 **2026 年 10 月 23 日 24:00**
 
